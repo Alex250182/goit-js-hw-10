@@ -1,12 +1,15 @@
 
 import Notiflix from 'notiflix';
 import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
-
+import SlimSelect from 'slim-select';
 
 const catInfo = document.querySelector('.cat-info');
 const select = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader-span');
 
+new SlimSelect({
+  select: '#selectElement'
+})
 
 select.addEventListener('change', selectCat);
 
