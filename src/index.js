@@ -7,9 +7,7 @@ const catInfo = document.querySelector('.cat-info');
 const select = document.querySelector('.breed-select');
 const loader = document.querySelector('.loader-span');
 
-new SlimSelect({
-  select: '#selectElement'
-})
+
 
 select.addEventListener('change', selectCat);
 
